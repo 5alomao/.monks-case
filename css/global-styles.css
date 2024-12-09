@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --white: #eae8e4;
+  --black: #2d2d2d;
+}
+
+body {
+  background-color: var(--black);
+}
