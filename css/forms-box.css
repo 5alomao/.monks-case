@@ -1,0 +1,217 @@
+#forms-box {
+  background-color: var(--black);
+  padding: 64px 80px;
+  align-items: center;
+  gap: 40px;
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--off-white);
+  padding: 24px;
+  border-radius: 24px;
+  gap: 32px;
+}
+
+.form header h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46.92px;
+  letter-spacing: 0.02em;
+}
+
+.form header p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.form .p2 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 18.85px;
+}
+
+.form-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  width: 100%;
+}
+
+.form-inputs input {
+  display: flex;
+  height: 42px;
+  padding: 6px 10px;
+  font-size: 20px;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+}
+
+.form-inputs input::placeholder {
+  color: var(--dark-gray);
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.form-validation {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.form-validation h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.expression {
+  display: flex;
+  gap: 24px;
+}
+
+.values {
+  display: flex;
+  background-color: var(--gray);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  gap: 20px;
+  border-radius: 8px;
+}
+
+.values p {
+  font-size: 20px;
+  color: var(--light-purple);
+  font-weight: 400;
+  line-height: 23.86px;
+}
+
+.bg-off-white {
+  margin: auto 0;
+}
+
+.form-validation input {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  padding: 6px 10px;
+  height: 42px;
+  border-radius: 8px;
+}
+
+.form-validation input::placeholder {
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.submit-btn {
+  padding: 8px 40px;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 4px;
+  background-color: var(--pink);
+  opacity: 0.5px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: 375px) {
+  #forms-box {
+    padding: 32px 24px;
+    flex-direction: column;
+  }
+
+  .form {
+    padding: 18px;
+  }
+
+  .form header h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.15px;
+  }
+
+  .form header p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  .form .p2 {
+    font-size: 18;
+    font-weight: 300;
+    line-height: 18.85px;
+  }
+
+  .form-inputs {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .form-inputs input {
+    font-size: 18px;
+  }
+
+  .form-inputs input::placeholder {
+    line-height: 24px;
+  }
+
+  /** FORM VALIDATION */
+  .form-validation {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .form-validation h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .expression {
+    align-items: center;
+    gap: 12px;
+  }
+
+  .values {
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    height: 42px;
+  }
+
+  .values p {
+    font-size: 16px;
+    line-height: 19.09px;
+    text-align: center;
+  }
+
+  .bg-off-white {
+    margin: auto 0;
+  }
+
+  .form-validation input {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  .form-validation input::placeholder {
+    line-height: 24px;
+  }
+
+  .submit-btn {
+    padding: 8px 40px;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 4px;
+    background-color: var(--pink);
+    opacity: 0.5px;
+  }
+}
