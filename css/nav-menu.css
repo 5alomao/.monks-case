@@ -1,8 +1,14 @@
 .nav-menu {
-  background-color: transparent;
+  background-color: var(--black);
   display: flex;
   gap: 36px;
+  position: relative;
   padding: 24px 80px;
+  z-index: 1;
+}
+
+#menu-bars {
+  display: none;
 }
 
 .nav-list {
@@ -13,11 +19,36 @@
 
 .nav-list-item {
   color: var(--white);
-  font-family: HelveticaNeue;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 200;
   line-height: 23.56px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+
+@media (max-width: 375px) {
+  #menu-bars {
+    display: block;
+    width: 64px;
+  }
+
+  .nav-menu {
+    justify-content: left;
+    padding: 16px 24px;
+    gap: 8px;
+  }
+
+  .nav-menu img {
+    width: 100px;
+    object-fit: scale-down;
+  }
+
+  .nav-list {
+    position: absolute;
+    background-color: red;
+    top: 46px;
+    display: none;
+    flex-direction: column;
+  }
 }
