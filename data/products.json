@@ -1,0 +1,26 @@
+[
+    {
+        "imageUrl": "assets/images/prod_01.png",
+        "imageAlt": "Product Image 01",
+        "title": "Lorem ipsum dolor",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+    },
+    {
+        "imageUrl": "assets/images/prod_02.png",
+        "imageAlt": "Product Image 02",
+        "title": "Lorem ipsum dolor",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+    },
+    {
+        "imageUrl": "assets/images/prod_03.png",
+        "imageAlt": "Product Image 03",
+        "title": "Lorem ipsum dolor",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+    },
+    {
+        "imageUrl": "assets/images/prod_04.png",
+        "imageAlt": "Product Image 04",
+        "title": "Lorem ipsum dolor",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+    }
+]
