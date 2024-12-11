@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/card-section.css" />
     <link rel="stylesheet" type="text/css" href="css/forms-box.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,18 +25,32 @@
       rel="stylesheet"
     />
 
-    <title>.Monks</title>
+    <title>.monks</title>
   </head>
+
   <body>
-    <header>
+    <header id="nav">
       <nav class="nav-menu">
-        <img src="assets/images/logo.png" alt=".monks Logo" />
-        <img id="menu-bars" src="assets/images/bars.png" alt="" />
+        <div id="nav-options">
+          <img src="assets/images/logo.png" alt=".monks Logo" />
+          <img
+            id="menu-bars"
+            src="assets/icons/bars-icon.png"
+            alt="Menu Burguer Icon"
+            aria-expanded="false"
+          />
+        </div>
         <ul class="nav-list">
-          <li class="nav-list-item">Categoria 1</li>
-          <li class="nav-list-item">Categoria 2</li>
-          <li class="nav-list-item">Categoria 3</li>
-          <li class="nav-list-item">Categoria 4</li>
+          <li class="nav-list-item"><a href="#">Categoria 1</a></li>
+          <li class="nav-list-item"><a href="#">Categoria 2</a></li>
+          <li class="nav-list-item"><a href="#">Categoria 3</a></li>
+          <li class="nav-list-item"><a href="#">Categoria 4</a></li>
+          <div>
+            <img
+              src="assets/images/nav-list-back.png"
+              alt="Nav-List Back Image"
+            />
+          </div>
         </ul>
       </nav>
     </header>
@@ -44,8 +59,9 @@
       <img
         id="hero-bg"
         src="assets/images/hero-bg.png"
-        alt=".monks Hero Background"
+        alt=".monks Hero Background Image"
       />
+
       <section id="hero-lp">
         <div class="hero-left">
           <h1 id="hero-title">Lorem ipsum dolor sit amet consectetur</h1>
@@ -54,7 +70,7 @@
             faucibus sit scelerisque quis commodo aenean viverra
           </p>
           <div>
-            <img src="assets/images/hero-scroll.png" alt="Hero Scroll" />
+            <img src="assets/images/hero-scroll.png" alt="Hero Scroll Image" />
           </div>
         </div>
       </section>
@@ -69,29 +85,29 @@
         </header>
         <div class="products-container">
           <div class="product-card">
-            <img src="assets/images/prod_01.png" alt="Product 01 - Image" />
+            <img src="assets/images/prod_01.png" alt="Product Image 01" />
             <h3>Lorem ipsum dolor</h3>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </div>
           <div class="product-card">
-            <img src="assets/images/prod_02.png" alt="Product 02 - Image" />
+            <img src="assets/images/prod_02.png" alt="Product Image 02" />
             <h3>Lorem ipsum dolor</h3>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </div>
           <div class="product-card">
-            <img src="assets/images/prod_03.png" alt="Product 03 - Image" />
+            <img src="assets/images/prod_03.png" alt="Product Image 03" />
             <h3>Lorem ipsum dolor</h3>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </div>
           <div class="product-card">
-            <img src="assets/images/prod_04.png" alt="Product 04 - Image" />
+            <img src="assets/images/prod_04.png" alt="Product Image 04" />
             <h3>Lorem ipsum dolor</h3>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </div>
         </div>
       </section>
 
-      <section id="simple-galery">
+      <section id="simple-gallery">
         <div>
           <header class="sections-header">
             <h1 class="header-title">Lorem ipsum dolor sit amet consectetur</h1>
@@ -100,11 +116,41 @@
               faucibus sit scelerisque quis commodo
             </p>
           </header>
-          <img src="assets/images/galery-01.png" alt="Galery Image 01" />
+          <div class="gallery-item">
+            <img src="assets/images/galery-01.png" alt="Galery Image 01" />
+            <div class="text">
+              <h3>Lorem ipsum dolor sit</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Libero, incidunt dolorum! Voluptates laboriosam ea voluptate!
+                Aliquid consectetur voluptates magnam sed?
+              </p>
+            </div>
+          </div>
         </div>
         <div>
-          <img src="assets/images/galery-02.png" alt="Galery Image 02" />
-          <img src="assets/images/galery-03.png" alt="Galery Image 03" />
+          <div class="gallery-item">
+            <img src="assets/images/galery-02.png" alt="Galery Image 02" />
+            <div class="text">
+              <h3>Lorem ipsum dolor sit</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Libero, incidunt dolorum! Voluptates laboriosam ea voluptate!
+                Aliquid consectetur voluptates magnam sed?
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/galery-03.png" alt="Galery Image 03" />
+            <div class="text">
+              <h3>Lorem ipsum dolor sit</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Libero, incidunt dolorum! Voluptates laboriosam ea voluptate!
+                Aliquid consectetur voluptates magnam sed?
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -118,8 +164,8 @@
             </p>
           </header>
           <div class="available-platforms">
-            <img src="assets/images/app-store.png" alt="App Store" />
-            <img src="assets/images/google-play.png" alt="Google Play" />
+            <img src="assets/images/app-store.png" alt="App Store Image" />
+            <img src="assets/images/google-play.png" alt="Google Play Image" />
           </div>
         </div>
       </section>
@@ -219,27 +265,27 @@
           <div class="form-inputs">
             <input
               type="text"
-              name="category"
-              id="category"
-              placeholder="Categoria*"
+              name="firstName"
+              id="firstName"
+              placeholder="Nome*"
             />
             <input
               type="text"
-              name="category"
-              id="category"
-              placeholder="Categoria*"
+              name="lastName"
+              id="lastName"
+              placeholder="Sobrenome*"
             />
             <input
               type="text"
-              name="category"
-              id="category"
-              placeholder="Categoria"
+              name="phoneNumber"
+              id="phoneNumber"
+              placeholder="Telefone"
             />
             <input
               type="text"
-              name="category"
-              id="category"
-              placeholder="Categoria"
+              name="address"
+              id="address"
+              placeholder="Endereço"
             />
           </div>
 
@@ -247,15 +293,15 @@
             <h3>Verificação de Segurança</h3>
             <div class="expression">
               <div class="values">
-                <p>427</p>
-                <img src="assets/images/plus-icon.png" alt="Icone de soma" />
-                <p>628</p>
+                <p id="num1">427</p>
+                <img src="assets/icons/plus-icon.png" alt="Plus Icon" />
+                <p id="num2">628</p>
               </div>
               <div class="bg-off-white">
                 <img
                   id="equals-icon"
-                  src="assets/images/equals-icon.png"
-                  alt=""
+                  src="assets/icons/equals-icon.png"
+                  alt="Equals Icon"
                 />
               </div>
               <input
@@ -267,32 +313,46 @@
             </div>
           </div>
 
-          <span class="submit-btn">Lorem ipsum</span>
+          <span id="submit-btn" class="submit-btn">Enviar</span>
+
+          <div id="custom-alert" class="form-alert alert hidden">
+            <span id="alert-message"></span>
+          </div>
         </div>
       </section>
 
       <div class="bg-black">
         <span class="bar"></span>
       </div>
-
-      <footer id="footer">
-        <div class="brands">
-          <img src="assets/images/instagram-icon.png" alt="" />
-          <img src="assets/images/whatsapp-icon.png" alt="" />
-          <img src="assets/images/twitter-icon.png" alt="" />
-          <img src="assets/images/facebook-icon.png" alt="" />
-        </div>
-        <div class="footer-nav">
-          <h3>Lorem ipsum dolor sit amet</h3>
-          <ul class="footer-list">
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-          </ul>
-        </div>
-      </footer>
     </main>
-    <footer></footer>
+
+    <footer id="footer">
+      <div class="brands">
+        <a href="https://www.instagram.com/5alomao" target="_blank">
+          <img src="assets/icons/instagram-icon.png" alt="Instagram Icon" />
+        </a>
+        <a href="https://wa.me/5535997695915" target="_blank">
+          <img src="assets/icons/whatsapp-icon.png" alt="Whatsapp Icon" />
+        </a>
+        <a href="">
+          <img src="assets/icons/twitter-icon.png" alt="Twitter Icon" />
+        </a>
+        <a href="">
+          <img src="assets/icons/facebook-icon.png" alt="Facebook Icon" />
+        </a>
+      </div>
+      <div class="footer-nav">
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <ul class="footer-list">
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/nav-menu.js"></script>
+    <script src="js/securityValidation.js"></script>
   </body>
 </html>
