@@ -51,3 +51,22 @@ com foco na criação de uma interface interativa e responsiva.
 
 - A página foi projetada para ser simples e intuitiva.
 
+## Imagens
+
+### Home
+![Home Page](https://imgur.com/MWdStNk.png)
+
+### Seção 1
+![First Section](https://imgur.com/jJiHQSy.png)
+
+### Seção 2
+![Second Section](https://imgur.com/hhpPM8s.png)
+
+### Plataformas Disponívei
+![Available Platforms](https://imgur.com/HuV3YBj.png)
+
+### Seção 3
+![Third Section](https://imgur.com/ii1VvIN.png)
+
+### Seção 4 e Footer
+![Fourth Section and Footer](https://imgur.com/uffRdCH.png)
