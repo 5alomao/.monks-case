@@ -22,21 +22,21 @@ submitBtn.addEventListener("click", function (event) {
 
   const correctResult = num1 + num2;
 
-  if (!firstName) {
-    showAlert("Digite seu nome", "error");
-    document.getElementById("firstName").focus();
-  } else if (!lastName) {
-    showAlert("Digite seu sobrenome", "error");
-    document.getElementById("lastName").focus();
-  } else if (!result) {
-    showAlert("Digite o resultado", "error");
-    document.getElementById("result").focus();
+  if (!firstName || !lastName || !result) {
+    showAlert("Por favor, preencha os campos obrigatórios", "error");
+    if (!firstName) {
+      document.getElementById("firstName").focus();
+    } else if (!lastName) {
+      document.getElementById("lastName").focus();
+    } else if (!result) {
+      document.getElementById("result").focus();
+    }
   } else if (parseInt(result) !== correctResult) {
     showAlert("O resultado está incorreto. Tente novamente!", "error");
     document.getElementById("result").focus();
   } else {
     showAlert(
-      `Olá, ${firstName}!<br>Sua verificação foi efetuada com sucesso!`,
+      `Olá, ${firstName}! <br> Sua verificação foi efetuada com sucesso!`,
       "success"
     );
   }
