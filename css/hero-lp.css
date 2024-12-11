@@ -186,7 +186,7 @@
 
 @media (max-width: 375px) {
   #hero-bg {
-    right: -85%;
+    right: -90%;
   }
   #hero-lp {
     padding-top: 10%;
@@ -195,6 +195,6 @@
 
 @media (max-width: 330px) {
   #hero-bg {
-    right: -95%;
+    right: -105%;
   }
 }

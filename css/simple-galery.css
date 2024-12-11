@@ -12,6 +12,12 @@
   justify-content: space-between;
 }
 
+#simple-gallery .gallery-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-out;
+}
+
 .gallery-item {
   position: relative;
   overflow: hidden;

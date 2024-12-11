@@ -17,11 +17,10 @@
   gap: 32px;
 }
 
-.form header h2 {
+.form header h1 {
   font-size: 40px;
   font-weight: 400;
   line-height: 46.92px;
-  letter-spacing: 0.02em;
 }
 
 .form header p {
@@ -137,8 +136,8 @@
 
 #custom-alert {
   position: absolute;
-  bottom: 20px;
-  background-color: #f44336;
+  top: 20px;
+  background-color: #e4635a;
   color: white;
   padding: 16px;
   border-radius: 5px;
@@ -153,11 +152,11 @@
 }
 
 #custom-alert.success {
-  background-color: #4caf50;
+  background-color: #6fdd72;
 }
 
 #custom-alert.error {
-  background-color: #f44336;
+  background-color: #e4635a;
 }
 
 #custom-alert.show {
@@ -169,7 +168,7 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
@@ -214,6 +213,15 @@
     padding: 64px 60px;
     flex-direction: column;
   }
+
+  .form header h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  
+  .form header p {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -244,14 +252,6 @@
     gap: 18px;
   }
 
-  .form header h2 {
-    font-size: 32px;
-  }
-
-  .form header p {
-    font-size: 22px;
-  }
-
   .form .p2 {
     font-size: 24px;
   }
@@ -261,8 +261,9 @@
 }
 
 @media (max-width: 576px) {
-  .form header h2 {
+  .form header h1 {
     font-size: 24px;
+    line-height: 30px;
   }
 
   .form header p {

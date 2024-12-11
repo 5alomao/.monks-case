@@ -7,6 +7,8 @@
 }
 
 #menu-bars {
+  position: relative;
+  z-index: 999;
   display: none;
   object-fit: scale-down;
   opacity: 0.85;
@@ -169,4 +171,11 @@
 
 .nav-list-item a.active::before {
   background-color: var(--black);
+}
+
+
+@media (max-width: 478px) {
+  .nav-menu {
+    padding: 24px;
+  }
 }
