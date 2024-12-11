@@ -18,6 +18,13 @@
   gap: 10px;
   border-radius: 32px;
   border: 1px solid var(--light-purple);
+  cursor: pointer;
+  transition: background-color ease-in-out 0.3s, color ease-in-out 0.3s;
+}
+
+.product-tag:hover {
+  background-color: var(--purple);
+  color: var(--off-white);
 }
 
 .product-tag p {

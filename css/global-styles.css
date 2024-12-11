@@ -15,7 +15,12 @@
   --dark-gray: #777777;
 }
 
+html {
+  background-color: var(--white);
+}
+
 body {
+  max-width: 1440px;
   background-color: var(--off-white);
   font-family: "Helvetica Neue", sans-serif;
   color: var(--black);
@@ -25,12 +30,8 @@ body {
 html,
 body {
   overflow-x: hidden;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-}
-
-main {
-  overflow-x: hidden;
 }
 
 p,
@@ -77,6 +78,26 @@ h3 {
   border-bottom: 1px solid var(--pink);
   position: absolute;
   width: 80%;
+}
+
+@media (max-width: 1200px) {
+  .header-title {
+    font-size: 36px;
+  }
+
+  .header-subtitle {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 840px) {
+  .header-title {
+    font-size: 28px;
+  }
+
+  .header-subtitle {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 375px) {
