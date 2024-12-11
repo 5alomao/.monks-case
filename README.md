@@ -33,6 +33,7 @@ com foco na criação de uma interface interativa e responsiva.
 ├── assets/
 │   ├── images/               # Imagens utilizadas na Landing Page
 │   ├── icons/                # Icones utilizados na Landing Page
+├── data/                     # Arquivos JSON contendo as informações dos elementos
 ├── css/                      # Arquivos de estilos CSS
 ├── js/                       # Arquivos JavaScript
 ├── index.html                # Página principal da Landing Page
