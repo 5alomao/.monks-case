@@ -18,6 +18,7 @@ com foco na criação de uma interface interativa e responsiva.
   - A Landing Page deve ser responsiva e se adaptar a diferentes tamanhos de tela.
   - O layout e design devem seguir o modelo fornecido no Figma.
   - Validação de formulário para garantir que os campos sejam preenchidos corretamente.
+  - Valores gerados dinâmicamente para validação de segurança.
   - Personalização de alertas para feedback do usuário (como sucesso ou erro).
 
 ## Instruções de Uso
