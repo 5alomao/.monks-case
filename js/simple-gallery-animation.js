@@ -1,20 +1,23 @@
 const galleryItems = document.querySelectorAll(".gallery-item");
 
-const observerCallback = (entries, observer) => {
+const simpleGalleryObserverCallback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
+      entry.target.classList.add("fade-top");
       observer.unobserve(entry.target);
     }
   });
 };
 
-const observerOptions = {
+const simpleGalleryObserverOptions = {
   threshold: 0.2,
 };
 
-const observer = new IntersectionObserver(observerCallback, observerOptions);
+const simpleGalleryObserver = new IntersectionObserver(
+  simpleGalleryObserverCallback,
+  simpleGalleryObserverOptions
+);
 
 galleryItems.forEach((item) => {
-  observer.observe(item);
+  simpleGalleryObserver.observe(item);
 });

@@ -54,7 +54,6 @@ function showAlert(message, type) {
   alertElement.classList.add("show");
 
   setTimeout(() => {
-    alertElement.classList.remove("show");
     alertElement.classList.add("hide");
   }, 3000);
 }
