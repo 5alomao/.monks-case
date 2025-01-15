@@ -5,6 +5,7 @@
 }
 
 .info-box {
+  opacity: 0;
   display: grid;
   color: var(--off-white);
   grid-template-columns: 3fr 1fr;
@@ -23,6 +24,7 @@
 }
 
 .available-platforms img {
+  opacity: 0;
   cursor: pointer;
 }
 

@@ -31,27 +31,26 @@ function createProductTagCard(tag) {
 
 function initTagObservers() {
   const tagItems = document.querySelectorAll("#tags-container > .product-tag");
-  console.log(tagItems.length);
-
-  const observerCallback = (entries, observer) => {
+  const tagsObserverCallback = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+        entry.target.classList.add("fade-top");
         observer.unobserve(entry.target);
       }
     });
   };
 
-  const observerOptions = {
+  const tagsObserverOptions = {
     threshold: 0.2,
   };
 
-  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  const tagsObeserver = new IntersectionObserver(
+    tagsObserverCallback,
+    tagsObserverOptions
+  );
 
   tagItems.forEach((tag) => {
-    setInterval(() => {
-      observer.observe(tag);
-    }, 1000);
+    tagsObeserver.observe(tag);
   });
 }
 

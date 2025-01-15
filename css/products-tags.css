@@ -13,6 +13,7 @@
 }
 
 .product-tag {
+  opacity: 0;
   background-color: var(--gray);
   color: var(--light-purple);
   padding: 8px 40px;
